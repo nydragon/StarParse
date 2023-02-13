@@ -13,6 +13,7 @@ import java.util.concurrent.ThreadFactory;
 
 import javax.swing.KeyStroke;
 
+import com.sun.javafx.stage.StageHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -124,7 +125,7 @@ public class Win32Utils {
 
 		try {
 			@SuppressWarnings({"deprecation"})
-			final TKStage tkStage = stage.impl_getPeer();
+			final TKStage tkStage = StageHelper.getPeer(stage);
 			if (tkStage == null) {
 				// does not exists (yet)
 				return null;
