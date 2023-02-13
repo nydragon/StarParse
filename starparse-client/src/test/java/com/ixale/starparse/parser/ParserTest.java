@@ -74,7 +74,7 @@ public class ParserTest {
 				LINE_MISSED_UNKNOWN = "[00:53:27.723] [@Ixale] [Palace Guardian {3295459686744064}:18566012136384] [Combat Technique {979806594269184}] [ApplyEffect {836045448945477}: Damage {836045448945501}] (0 -) <508>",
 				LINE_MISSED_PARRY = "[03:03:05.421] [@Ixaar] [Dread Master Raptus {3302902865068032}:436007630766] [Strike {947362411315200}] [ApplyEffect {836045448945477}: Damage {836045448945501}] (0 -parry {836045448945503}) <1>",
 				LINE_UNKNOWN_DAMAGE = "[22:36:08.099] [@Ixale] [@Ixale] [Weight of Knowledge {3306252939559174}] [ApplyEffect {836045448945477}: Damage {836045448945501}] (2042 )",
-				LINE_GER = "[20:02:43.072] [Palasthüter {3295459686744064}:4983000110759] [@Kel'lara] [Schwertreflexion {3305905047207936}] [EffektAnwenden {836045448945477}: Schaden {836045448945501}] (186 Körperlich {836045448940876}(reflektiert {836045448953649})) <186>",
+				LINE_GER = "[20:02:43.072] [PalasthÃ¼ter {3295459686744064}:4983000110759] [@Kel'lara] [Schwertreflexion {3305905047207936}] [EffektAnwenden {836045448945477}: Schaden {836045448945501}] (186 KÃ¶rperlich {836045448940876}(reflektiert {836045448953649})) <186>",
 				LINE_GSF = "[18:03:09.038] [5016000057656] [5016000057656] [ {3301773288669184}] [Event {836045448945472}: AbilityActivate {836045448945479}] ()",
 				LINE_GSF2 = "[20:11:59.191] [] [35027000013151] [Ion Railgun {3301786173571072}] [ApplyEffect {836045448945477}: Damage {836045448945501}] (854 kinetic {836045448940873})",
 				LINE_EMPTY_NPC_ID = "[15:46:33.319] [@Kalcat] [Master Computer {2920848344219648}] [Attack Me {800345680773120}] [Event {836045448945472}: ModifyThreat {836045448945483}] () <0>",
@@ -83,10 +83,10 @@ public class ParserTest {
 				LINE_EMPTY_NPC_ID2 = "[14:18:51.998] [Rival Acolyte {287749923930112}] [@Vhaerys] [Shocked {811954977374482}] [ApplyEffect {836045448945477}: Damage {836045448945501}] (21 energy {836045448940874}) <21>",
 				LINE_MITIGATION_RESIST = "[06:22:22.800] [@Ixalo] [Colossal Monolith {3570947479044096}:943000102572] [Electro Net {3066456325488640}] [ApplyEffect {836045448945477}: Damage {836045448945501}] (0 -resist {836045448945507}) <1>",
 				LINE_OVERFLOW_THREAT = "[17:53:10.893] [@Ixale] [Worldbreaker Monolith {3547338043817984}:6301003403864] [] [Event {836045448945472}: Taunt {836045448945488}] () <12278754304>",
-				LINE_COMBAT_ENTER_54 = "[17:34:49.007] [@Nôfretete] [@Nôfretete] [] [Event {836045448945472}: EnterCombat {836045448945489}] (XS Freighter)",
-				LINE_COMBAT_EXIT_54 = "[17:35:01.116] [@Nôfretete] [@Nôfretete] [] [Event {836045448945472}: ExitCombat {836045448945490}] (XS Freighter)",
+				LINE_COMBAT_ENTER_54 = "[17:34:49.007] [@NÃ´fretete] [@NÃ´fretete] [] [Event {836045448945472}: EnterCombat {836045448945489}] (XS Freighter)",
+				LINE_COMBAT_EXIT_54 = "[17:35:01.116] [@NÃ´fretete] [@NÃ´fretete] [] [Event {836045448945472}: ExitCombat {836045448945490}] (XS Freighter)",
 				LINE_COMBAT_ENTER_54_OPS = "[21:56:15.395] [@Elidh] [@Elidh] [] [Event {836045448945472}: EnterCombat {836045448945489}] (Denova (8 Player Veteran))",
-				LINE_COMBAT_EXIT_54_OPS = "[22:53:17.980] [@Meirín] [@Meirín] [] [Event {836045448945472}: ExitCombat {836045448945490}] (The Dread Palace (8 Player Veteran))",
+				LINE_COMBAT_EXIT_54_OPS = "[22:53:17.980] [@MeirÃ­n] [@MeirÃ­n] [] [Event {836045448945472}: ExitCombat {836045448945490}] (The Dread Palace (8 Player Veteran))",
 				LINE_V7_ZONE_START = "[21:10:14.218] [@Lad Dominic#689199156848288|(63.84,1553.43,229.43,180.00)|(1/392212)] [] [] [AreaEntered {836045448953664}: Valley of the Machine Gods {833571547775765}] (HE600) <v7.0.0b>",
 				LINE_V7_OPS_START = "[21:10:14.248] [@Lad Dominic#689199156848288|(63.84,1553.43,229.43,180.00)|(392212/406515)] [] [] [AreaEntered {836045448953664}: Valley of the Machine Gods {833571547775765} 8 Player Veteran {836045448953652}] (HE600) <v7.0.0b>",
 				LINE_V7_COMBAT_START = "[21:11:27.222] [@Lad Dominic#689199156848288|(68.38,1562.25,229.28,-0.45)|(406515/406515)] [] [] [Event {836045448945472}: EnterCombat {836045448945489}]",
@@ -891,11 +891,11 @@ public class ParserTest {
 
 		final Object[] samplePairs = new Object[]{
 				"[01:55:34.526] [@Ixayla] [@Ixayla] [] [Event {836045448945472}: EnterCombat {836045448945489}] ()", null,
-				"[01:55:48.143] [@Dúbyah] [@Ixayla] [Guard {1780044900859904}] [ApplyEffect {836045448945477}: Guard {1780044900859904}] ()", null,
-				"[01:55:48.143] [@Dúbyah] [@Ixayla] [Guard {1780044900859904}] [ApplyEffect {836045448945477}: Guard {1780044900859904}] ()", null,
+				"[01:55:48.143] [@DÃºbyah] [@Ixayla] [Guard {1780044900859904}] [ApplyEffect {836045448945477}: Guard {1780044900859904}] ()", null,
+				"[01:55:48.143] [@DÃºbyah] [@Ixayla] [Guard {1780044900859904}] [ApplyEffect {836045448945477}: Guard {1780044900859904}] ()", null,
 				"[01:56:01.343] [@Ixayla] [@Ixayla] [Hammer Shot {801299163512832}] [Event {836045448945472}: AbilityActivate {836045448945479}] ()", null,
 				"[01:56:01.440] [@Ixayla] [@Grippy] [Hammer Shot {801299163512832}] [ApplyEffect {836045448945477}: Heal {836045448945500}] (527) <38>", 38 / 0.5 / (0.75 - 0.1),
-				"[01:56:01.666] [@Dúbyah] [@Ixayla] [Guard {1780044900859904}] [RemoveEffect {836045448945478}: Guard {1780044900859904}] ()", null,
+				"[01:56:01.666] [@DÃºbyah] [@Ixayla] [Guard {1780044900859904}] [RemoveEffect {836045448945478}: Guard {1780044900859904}] ()", null,
 				"[01:56:01.923] [@Ixayla] [@Stofil] [Kolto Bomb {3169148993536000}] [ApplyEffect {836045448945477}: Heal {836045448945500}] (452) <203>", 203 / 0.45, // guard removal delayed
 				"[01:56:01.923] [@Ixayla] [@Thewicked'lv] [Kolto Bomb {3169148993536000}] [ApplyEffect {836045448945477}: Heal {836045448945500}] (465) <209>", 209 / 0.45,
 				"[01:56:01.923] [@Ixayla] [@Cryptica] [Kolto Bomb {3169148993536000}] [ApplyEffect {836045448945477}: Heal {836045448945500}] (452) <203>", 203 / 0.45,
@@ -904,7 +904,7 @@ public class ParserTest {
 				"[01:56:01.955] [@Ixayla] [@Grippy] [Hammer Shot {801299163512832}] [ApplyEffect {836045448945477}: Heal {836045448945500}] (1001*) <450>", 450 / 0.45 + 1,
 				"[01:56:02.343] [@Ixayla] [@Grippy] [Hammer Shot {801299163512832}] [ApplyEffect {836045448945477}: Heal {836045448945500}] (487) <219>", 219 / 0.45,
 				"[01:56:02.850] [@Ixayla] [@Grippy] [Hammer Shot {801299163512832}] [ApplyEffect {836045448945477}: Heal {836045448945500}] (924*) <67>", 67 / 0.45,
-				"[01:56:03.146] [@Dúbyah] [@Ixayla] [Guard {1780044900859904}] [RemoveEffect {836045448945478}: Guard {1780044900859904}] ()", null, // now its removed in the log
+				"[01:56:03.146] [@DÃºbyah] [@Ixayla] [Guard {1780044900859904}] [RemoveEffect {836045448945478}: Guard {1780044900859904}] ()", null, // now its removed in the log
 				"[01:56:03.353] [@Ixayla] [@Grippy] [Hammer Shot {801299163512832}] [ApplyEffect {836045448945477}: Heal {836045448945500}] (924*)", null,
 				"[01:56:03.750] [@Ixayla] [@Grippy] [Hammer Shot {801299163512832}] [ApplyEffect {836045448945477}: Heal {836045448945500}] (924*)", null,
 				"[01:56:04.290] [@Ixayla] [@Irisa] [Trauma Probe {999516199190528}] [ApplyEffect {836045448945477}: Heal {836045448945500}] (2301*) <1035>", 1035 / 0.45 + 1,

@@ -885,16 +885,16 @@ public class Parser {
 			s = Size.Eight;
 			m = Mode.NiM;
 		} else if (instanceType != null) {
-			if (instanceType.contains("16 ") || instanceType.contains("16 ")) {
+			if (instanceType.contains("16 ") || instanceType.contains("16Â ")) {
 				s = Size.Sixteen;
-			} else if (instanceType.contains("8 ") || instanceType.contains("8 ")) {
+			} else if (instanceType.contains("8 ") || instanceType.contains("8Â ")) {
 				s = Size.Eight;
 			}
 			if (instanceType.contains("Story") || instanceType.contains("histoire")) {
 				m = Mode.SM;
-			} else if (instanceType.contains("Veteran") || instanceType.contains("vétéran")) {
+			} else if (instanceType.contains("Veteran") || instanceType.contains("vÃ©tÃ©ran")) {
 				m = Mode.HM;
-			} else if (instanceType.contains("Master") || instanceType.contains("maître")) {
+			} else if (instanceType.contains("Master") || instanceType.contains("maÃ®tre")) {
 				m = Mode.NiM;
 			}
 		}

@@ -42,7 +42,7 @@ public class ParselyTest {
 		p.timezone = "Europe/Prague";
 		p.guild = "Ixale and Friends (tm)";
 		p.visibility = 0;
-		p.notes = "test\nsecond\r\nthird +мљишћэ";
+		p.notes = "test\nsecond\r\nthird +Г¬ВљГЁГёВћГЅ";
 		p.username = "Ixale";
 		p.password = "mariparse";
 		p.version = "7.0.0b";

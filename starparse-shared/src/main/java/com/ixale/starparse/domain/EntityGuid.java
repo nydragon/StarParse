@@ -386,7 +386,7 @@ public enum EntityGuid {
 		}
 		return effectName.contains("Reactive Warding")
 				|| effectName.contains("des Reaktivschutzes")
-				|| effectName.contains("de la rage réactive")
+				|| effectName.contains("de la rage rÃ©active")
 				//
 				|| effectName.contains("Absorb Shield")
 				|| effectName.contains("Absorptionsschild")
@@ -394,7 +394,7 @@ public enum EntityGuid {
 				//
 				|| effectName.contains("Shield Defense")
 				|| effectName.contains("Schildverteidigung")
-				|| effectName.contains("Défense bouclier");
+				|| effectName.contains("DÃ©fense bouclier");
 	}
 
 	// generated list of F/T and M/R attacks

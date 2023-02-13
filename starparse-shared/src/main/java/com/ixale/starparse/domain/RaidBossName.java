@@ -25,7 +25,7 @@ public enum RaidBossName {
 	// DF
 	Nefra("Nefra, Who Bars the Way", "Nefra"),
 	Draxus("Gate Commander Draxus", "Draxus"),
-	Grobthok("Grob’Thok, Who Feeds The Forge", "Grob’Thok"),
+	Grobthok("Grob'Thok, Who Feeds The Forge", "Grob'Thok"),
 	CorruptorZero("Corruptor Zero"),
 	Brontes("Dread Master Brontes", "Brontes"),
 
