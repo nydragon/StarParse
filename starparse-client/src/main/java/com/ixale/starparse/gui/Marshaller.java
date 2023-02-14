@@ -25,6 +25,7 @@ import com.ixale.starparse.ws.RaidCombatMessage;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.PrettyPrintWriter;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
+import com.thoughtworks.xstream.security.AnyTypePermission;
 
 public class Marshaller {
 
@@ -45,6 +46,7 @@ public class Marshaller {
 		xmlReader.useAttributeFor(Ranking.Percentile.class, "p");
 		xmlReader.useAttributeFor(Ranking.Percentile.class, "v");
 		xmlReader.ignoreUnknownElements();
+		xmlReader.addPermission(AnyTypePermission.ANY);
 	}
 
 	@SuppressWarnings("unchecked")
