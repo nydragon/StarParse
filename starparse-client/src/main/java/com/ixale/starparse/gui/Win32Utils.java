@@ -127,6 +127,8 @@ public class Win32Utils {
 			return windows.get(stage);
 		}
 
+		return null;
+		/*
 		try {
 			@SuppressWarnings({"deprecation"})
 			final TKStage tkStage = StageHelper.getPeer(stage);
@@ -151,6 +153,7 @@ public class Win32Utils {
 			e.printStackTrace();
 			throw new Exception("Error getting handle for: " + stage.getTitle(), e);
 		}
+		*/
 	}
 
 	// https://github.com/tulskiy/jkeymaster
