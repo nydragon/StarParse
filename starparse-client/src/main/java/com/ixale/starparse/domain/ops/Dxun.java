@@ -1,17 +1,13 @@
 package com.ixale.starparse.domain.ops;
 
-import com.ixale.starparse.domain.Combat;
-import com.ixale.starparse.domain.Event;
-import com.ixale.starparse.domain.NpcType;
-import com.ixale.starparse.domain.Raid;
-import com.ixale.starparse.domain.RaidBoss;
+import com.ixale.starparse.domain.*;
 import com.ixale.starparse.domain.RaidBoss.BossUpgradeCallback;
-import com.ixale.starparse.domain.RaidBossName;
 import com.ixale.starparse.parser.Helpers;
 import com.ixale.starparse.timer.BaseTimer;
 import com.ixale.starparse.timer.TimerManager;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Dxun extends Raid {
@@ -485,20 +481,20 @@ public class Dxun extends Raid {
 			setColor(1);
 		}
 	}
-//
-//	public static class TrandoshanSquadUltimateHunterChallenge extends CombatChallenge {
-//		public TrandoshanSquadUltimateHunterChallenge() {
-//			super(RaidChallengeName.UltimateHunter, TRANDOSHAN_SQUAD_PHASE_ULTIMATE_HUNTER, CombatChallenge.Type.DAMAGE,
-//					Arrays.asList(new Object[]{4381150109761536L}), "target_guid IN (?)");
-//		}
-//	}
-//
-//	public static class HuntmasterShelleighChallenge extends CombatChallenge {
-//		public HuntmasterShelleighChallenge() {
-//			super(RaidChallengeName.Shelleigh, HUNTMASTER_PHASE_SHELLEIGH, CombatChallenge.Type.DAMAGE,
-//					Arrays.asList(new Object[]{4330237567434752L}), "target_guid IN (?)");
-//		}
-//	}
+
+	public static class TrandoshanSquadUltimateHunterChallenge extends CombatChallenge {
+		public TrandoshanSquadUltimateHunterChallenge() {
+			super(RaidChallengeName.UltimateHunter, TRANDOSHAN_SQUAD_PHASE_ULTIMATE_HUNTER, CombatChallenge.Type.DAMAGE,
+					Arrays.asList(4381150109761536L));
+		}
+	}
+
+	public static class HuntmasterShelleighChallenge extends CombatChallenge {
+		public HuntmasterShelleighChallenge() {
+			super(RaidChallengeName.Shelleigh, HUNTMASTER_PHASE_SHELLEIGH, CombatChallenge.Type.DAMAGE,
+					Arrays.asList(4330237567434752L));
+		}
+	}
 
 	public static class ApexFlareTimer extends BaseTimer {
 		public ApexFlareTimer() {
@@ -542,10 +538,10 @@ public class Dxun extends Raid {
 		}
 	}
 
-//	public static class ApexVoltinatorChallenge extends CombatChallenge {
-//		public ApexVoltinatorChallenge() {
-//			super(RaidChallengeName.Voltinator, APEX_VG_PHASE_VOLTINATOR, CombatChallenge.Type.DAMAGE,
-//					Arrays.asList(new Object[]{APEX_VG_SM_8M_16M, APEX_VG_HM_8M_16M}), "target_guid IN (?, ?)");
-//		}
-//	}
+ 	public static class ApexVoltinatorChallenge extends CombatChallenge {
+		public ApexVoltinatorChallenge() {
+			super(RaidChallengeName.Voltinator, APEX_VG_PHASE_VOLTINATOR, CombatChallenge.Type.DAMAGE,
+					Arrays.asList(APEX_VG_HM_8M, APEX_VG_HM_16M));
+		}
+	}
 }
