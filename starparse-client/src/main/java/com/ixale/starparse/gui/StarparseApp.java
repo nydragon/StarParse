@@ -375,7 +375,7 @@ public class StarparseApp extends Application {
 		stage.getScene().getStylesheets().clear();
 		stage.getScene().getStylesheets().add("styles.bss");
 		stage.getScene().getStylesheets().add((isDark ? "styles.dark.bss" : "styles.light.bss"));
-		if (javafx.stage.Screen.getPrimary().getDpi() > 96) { // 125% = 96 on high-DPI screens
+		if (javafx.stage.Screen.getPrimary().getDpi() > 86) { // 125% = 96 on high-DPI screens // for whatever reason my screen is at 87 and I need this
 			// FIXME: workaround for JavaFX bug
 			stage.getScene().getStylesheets().add("styles120.bss");
 		}
