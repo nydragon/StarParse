@@ -19,9 +19,9 @@ import org.slf4j.LoggerFactory;
 
 import com.sun.javafx.tk.TKStage;
 import com.sun.jna.Pointer;
-import com.sun.jna.platform.win32.User32;
+//import com.sun.jna.platform.win32.User32;
 import com.sun.jna.platform.win32.WinDef.HWND;
-import com.sun.jna.platform.win32.WinUser;
+//import com.sun.jna.platform.win32.WinUser;
 
 import javafx.stage.Stage;
 
@@ -49,7 +49,7 @@ public class Win32Utils {
 
 	private static final HWND HWND_TOPMOST = new HWND(Pointer.createConstant(-1));
 
-	private static final User32 user32 = User32.INSTANCE;
+	//private static final User32 user32 = User32.INSTANCE;
 
 	private static final Map<Stage, HWND> windows = new HashMap<>();
 
@@ -60,6 +60,7 @@ public class Win32Utils {
 			return;
 		}
 
+		/*
 		int style = user32.GetWindowLong(hWnd, GWL_EXSTYLE);
 
 		style |= WS_EX_TOOLWINDOW;
@@ -69,6 +70,7 @@ public class Win32Utils {
 		user32.ShowWindow(hWnd, SW_HIDE); // hide the window
 		user32.SetWindowLong(hWnd, GWL_EXSTYLE, style); // set the style
 		user32.ShowWindow(hWnd, SW_SHOW); // show the window for the new style to come into effect
+		*/
 	}
 
 	public static void setMouseTransparency(final Stage stage, boolean mouseTransparent, boolean solid) throws Exception {
@@ -78,6 +80,7 @@ public class Win32Utils {
 			return;
 		}
 
+		/*
 		int style = user32.GetWindowLong(hWnd, GWL_EXSTYLE);
 		if (mouseTransparent) {
 			style |= WS_EX_TRANSPARENT;
@@ -101,6 +104,7 @@ public class Win32Utils {
 		user32.ShowWindow(hWnd, SW_HIDE); // hide the window
 		user32.SetWindowLong(hWnd, GWL_EXSTYLE, style); // set the style
 		user32.ShowWindow(hWnd, SW_SHOW); // show the window for the new style to come into effect
+		*/
 	}
 
 	public static void bringWindowToFront(final Stage stage) throws Exception {
@@ -110,7 +114,7 @@ public class Win32Utils {
 			return;
 		}
 
-		user32.SetWindowPos(hWnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_SHOWWINDOW | SWP_NOACTIVATE | SWP_NOREDRAW);
+		//user32.SetWindowPos(hWnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_SHOWWINDOW | SWP_NOACTIVATE | SWP_NOREDRAW);
 	}
 
 	public static void forgetWindow(final Stage stage) {
@@ -190,10 +194,11 @@ public class Win32Utils {
 
 	static final Runnable hotkeyLoop = new Runnable() {
 		public void run() {
+			/*
 			User32.MSG msg = new User32.MSG();
 			hotkeyListen = true;
 			while (hotkeyListen) {
-				while (user32.PeekMessage(msg, HWND_TOPMOST, WinUser.WM_HOTKEY, WinUser.WM_HOTKEY, 0x0001 /* PM_REMOVE */)) {
+				while (user32.PeekMessage(msg, HWND_TOPMOST, WinUser.WM_HOTKEY, WinUser.WM_HOTKEY, 0x0001)) {
 					if (msg.message == WinUser.WM_HOTKEY) {
 						final HotKey hotKey = hotkeyMap.get(msg.wParam.intValue());
 
@@ -299,6 +304,7 @@ public class Win32Utils {
 					}
 				}
 			}
+			*/
 		}
 	};
 
