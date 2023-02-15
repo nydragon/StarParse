@@ -250,7 +250,7 @@ abstract public class BasePopoutPresenter implements Initializable {
 			return;
 		}
 
-		getPopout().setScale(this.scale);
+		getPopout().setScale(this.scale*1.5);
 	}
 
 	public void setBars(final boolean bars) {

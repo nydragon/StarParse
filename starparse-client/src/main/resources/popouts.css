@@ -1,6 +1,6 @@
 .popout {
     -fx-background-color: transparent; /* #00000033; */
-    -fx-font: .95em "System";
+    -fx-font: .75em "System";
 }
 
 .solid {
