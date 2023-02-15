@@ -86,8 +86,8 @@ public class Dxun extends Raid {
 				new long[]{TRANDOSHAN_SQUAD_HM_16M}, // HM 16m
 				null);
 
-//		addChallenge(RaidBossName.TrandoshanSquad, new TrandoshanSquadUltimateHunterChallenge());
-//
+		addChallenge(RaidBossName.TrandoshanSquad, new TrandoshanSquadUltimateHunterChallenge());
+
 		RaidBoss.add(this, RaidBossName.TheHuntmaster,
 				new long[]{HUNTMASTER_SM_8M, 4281661487316992L}, // SM 8m
 				new long[]{HUNTMASTER_SM_16M}, // SM 16m
@@ -95,8 +95,8 @@ public class Dxun extends Raid {
 				new long[]{HUNTMASTER_HM_16M}, // HM 16m
 				null);
 
-//		addChallenge(RaidBossName.TheHuntmaster, new HuntmasterShelleighChallenge());
-//
+		addChallenge(RaidBossName.TheHuntmaster, new HuntmasterShelleighChallenge());
+
 		RaidBoss.add(this, RaidBossName.ApexVanguard,
 				new long[]{APEX_VG_SM_8M}, // SM 8m
 				new long[]{APEX_VG_SM_16M}, // SM 16m
@@ -118,8 +118,8 @@ public class Dxun extends Raid {
 						return null;
 					}
 				});
-//
-//		addChallenge(RaidBossName.ApexVanguard, new ApexVoltinatorChallenge());
+
+		addChallenge(RaidBossName.ApexVanguard, new ApexVoltinatorChallenge());
 
 		npcs.put(4246356856143872L, new Npc(NpcType.boss_1 /*boss_raid*/)); // Stampeding Bull, boss.the_pack_leader.charging_bull, npc.operation.dxun.difficulty_1.boss.the_pack_leader.charging_bull
 		npcs.put(4246176467517440L, new Npc(NpcType.boss_raid)); // Red, boss.the_pack_leader.red, npc.operation.dxun.difficulty_1.boss.the_pack_leader.red
