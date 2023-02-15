@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox fx:id="dialogRoot" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="320.0" spacing="5.0" styleClass="modal-text" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ixale.starparse.gui.dialog.UploadParselyDialogPresenter">
+<VBox fx:id="dialogRoot" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="340.0" spacing="5.0" styleClass="modal-text" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ixale.starparse.gui.dialog.UploadParselyDialogPresenter">
   <children>
     <Label fx:id="uploadLabel" alignment="TOP_LEFT" minHeight="-Infinity" prefHeight="32.0" prefWidth="290.0" text="You are about to upload the whole combat log to Parsely abc def." wrapText="true" VBox.vgrow="NEVER">
       <VBox.margin>
