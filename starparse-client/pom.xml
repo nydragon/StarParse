@@ -67,7 +67,7 @@
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib-nodep</artifactId>
-			<version>2.2</version>
+			<version>3.3.0</version>
 		</dependency>
 
 		<!-- Logging -->
@@ -129,7 +129,7 @@
 		<dependency>
 			<groupId>org.glassfish.tyrus.bundles</groupId>
 			<artifactId>tyrus-standalone-client-jdk</artifactId>
-			<version>1.12</version>
+			<version>1.20</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.websocket</groupId>
@@ -141,14 +141,7 @@
 		<dependency>
 			<groupId>net.java.dev.jna</groupId>
 			<artifactId>jna-platform</artifactId>
-			<version>4.1.0</version>
-		</dependency>
-
-		<!-- Commons-Codec -->
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>1.15</version>
+			<version>5.13.0</version>
 		</dependency>
 
 		<!-- JavaFX -->
@@ -167,14 +160,6 @@
 			<artifactId>javafx-media</artifactId>
 			<version>17.0.2</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.openjfx</groupId>
-			<artifactId>javafx-maven-plugin</artifactId>
-			<version>0.0.8</version>
-			<type>maven-plugin</type>
-		</dependency>
-
 	</dependencies>
 
 	<build>
