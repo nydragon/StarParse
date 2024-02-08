@@ -1,9 +1,8 @@
 /starparse-shared/target/
 /starparse-client/target/
-/starparse-client/sounds
 /starparse-client/starparse-attacks.xml
 /starparse-client/starparse-timers.xml
-/starparse-client/starparse.log
-/starparse-client/starparse.xml
-/starparse-client/icons
+/starparse-client/build/starparse.log
+/starparse-client/build/starparse.xml
+/starparse-client/build/stats/
 .idea/

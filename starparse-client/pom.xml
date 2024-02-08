@@ -194,6 +194,7 @@
 							<mainClass>com.ixale.starparse.gui.Main</mainClass>
 						</manifest>
 					</archive>
+					<outputDirectory>build</outputDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
