@@ -4,5 +4,8 @@
 /starparse-client/starparse-timers.xml
 /starparse-client/build/starparse.log
 /starparse-client/build/starparse.xml
+/starparse-client/build/starparse-client-1.0.jar
+/starparse-client/build/icons/
+/starparse-client/build/sounds/
 /starparse-client/build/stats/
 .idea/
