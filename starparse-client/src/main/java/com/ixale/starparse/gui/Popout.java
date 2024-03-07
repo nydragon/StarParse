@@ -100,7 +100,9 @@ public class Popout {
 			wrapper.initStyle(StageStyle.TRANSPARENT);
 			root.getStyleClass().remove("solid");
 		}
+
 		wrapper.setTitle(StarparseApp.TITLE + " - " + presenter.getName());
+		wrapper.setAlwaysOnTop(true);
 
 		root.layout();
 		root.setManaged(false);
