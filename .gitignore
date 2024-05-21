@@ -9,3 +9,4 @@
 /starparse-client/build/sounds/
 /starparse-client/build/stats/
 .idea/
+*.log
