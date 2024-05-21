@@ -407,7 +407,7 @@
       <interval>15.0</interval>
       <color>0xff0000ff</color>
       <slot>A</slot>
-      <enabled>true</enabled>
+      <enabled>false</enabled>
       <ignoreRepeated>false</ignoreRepeated>
       <showSource>false</showSource>
     </com.ixale.starparse.domain.ConfigTimer>
