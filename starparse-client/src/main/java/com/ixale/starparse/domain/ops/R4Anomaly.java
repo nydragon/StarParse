@@ -89,6 +89,7 @@ public class R4Anomaly extends Raid {
 		npcs.put(LORD_VALEO_HM_8M, new Npc(NpcType.boss_raid)); // Lord Valeo, deepstation, raidEncounter
 
 		npcs.put(LADY_DOMINIQUE_SM_8M, new Npc(NpcType.boss_raid)); // Lady Dominique, deepstation, raidEncounter
+		npcs.put(LADY_DOMINIQUE_HM_8M, new Npc(NpcType.boss_raid)); // Lady Dominique, deepstation, raidEncounter
 
 //		npcs.put(4471292883369984L, new Npc(NpcType.boss_2)); // Unknown, deepstation, raidEncounter
 //		npcs.put(4490697545613312L, new Npc(NpcType.boss_1)); // Unknown, deepstation, raidEncounter
