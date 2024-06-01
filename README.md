@@ -1,6 +1,3 @@
-# StarParse
-SWTOR Ixale StarParse
-
 # Starparse for Linux
 
 This repository is a fork of the original [Starparse](http://ixparse.com/) by Ixale. It has been tailored specifically for Linux, incorporating additional functionalities and updates, including an upgrade to Java 17.
