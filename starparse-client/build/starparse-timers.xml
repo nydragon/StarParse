@@ -48,9 +48,12 @@
         <abilityGuid>3298406034309120</abilityGuid>
         <boss>Dread Master Raptus</boss>
       </trigger>
+      <volume>80</volume>
+      <soundOffset>2</soundOffset>
       <interval>15.2</interval>
       <color>0xccccccff</color>
       <slot>A</slot>
+      <audio>R2D2 - WEEEOOOOWW!.mp3</audio>
       <enabled>true</enabled>
       <ignoreRepeated>false</ignoreRepeated>
       <showSource>false</showSource>
