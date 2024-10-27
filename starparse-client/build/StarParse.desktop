@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Exec=/path/to/StarParse/starparse-client/build/run_starparse.sh
+Icon=StarParse.ico
+Name=StarParse
+Terminal=false
+Type=Application
