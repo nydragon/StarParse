@@ -22,7 +22,7 @@ Ensure you have the following installed on your system:
 2. **Build the Project**
     Use Maven to build the project and generate the JAR file.
     ```sh
-    mvn clean package -DskipTests
+    mvn clean package
     ```
 
 3. **Run the Application**
@@ -31,6 +31,7 @@ Ensure you have the following installed on your system:
     cd StarParse/starparse-client/build
     ./run_starparse.sh
     ```
+    There is also a .desktop file that you can edit and copy to ~/.local/share/applications
 
 ## Usage
 
