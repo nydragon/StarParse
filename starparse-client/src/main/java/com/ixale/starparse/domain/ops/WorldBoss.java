@@ -65,6 +65,16 @@ public class WorldBoss extends Raid {
 				new long[]{4204764392849408L}, // HM 8m
 				new long[]{4204772982784000L}); // HM 16m
 
+		RaidBoss.add(this, RaidBossName.PropagatorCore,
+				new long[]{4824927605620736L}, // SM 8m
+				null, // SM 16m
+				null, // HM 8m //placeholder
+				null); // HM 16m
+
+		npcs.put(4824927605620736L, new Npc(NpcType.boss_raid)); // Propagator Core, ilum_lair, raidEncounter
+		npcs.put(4845470434197504L, new Npc(NpcType.boss_1)); // Imperfect Construct, ilum_lair, raidEncounter
+		npcs.put(4829566170300416L, new Npc(NpcType.boss_1)); // Prey Seeker Droid, ilum_lair, raidEncounter
+
 		npcs.put(4199438633402368L, new Npc(NpcType.boss_1)); // Caustic Drone, ossus_lair, raidEncounter
 		npcs.put(4198317646938112L, new Npc(NpcType.boss_1)); // Geonosian Berserker, ossus_lair, raidEncounter
 		npcs.put(4197677696811008L, new Npc(NpcType.boss_2)); // Geonosian Royal Guard, ossus_lair, raidEncounter

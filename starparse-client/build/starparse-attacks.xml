@@ -1082,6 +1082,7 @@
     <long>4715350104997888</long>
     <long>4788459038310400</long>
     <long>4794459107622912</long>
+    <long>4831984236888064</long>
   </mr>
   <ft>
     <long>807290642890752</long>
@@ -1935,5 +1936,7 @@
     <long>4760211038404608</long>
     <long>4780710917308674</long>
     <long>4792668106260480</long>
+    <long>4825043569737986</long>
+    <long>4826160261234688</long>
   </ft>
 </com.ixale.starparse.domain.ConfigAttacks>

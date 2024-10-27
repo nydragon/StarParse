@@ -112,7 +112,10 @@ public enum RaidBossName {
 	Watchdog("Watchdog"),
 	LordValeo("Lord Valeo"),
 	LordKanoth("Lord Kanoth"),
-	LadyDominique("Lady Dominique")
+	LadyDominique("Lady Dominique"),
+
+	// WB 7.6
+	PropagatorCore("Propagator Core XR-53")
 	;
 
 	private final String fullName;
