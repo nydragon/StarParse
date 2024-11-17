@@ -68,12 +68,18 @@ public class WorldBoss extends Raid {
 		RaidBoss.add(this, RaidBossName.PropagatorCore,
 				new long[]{4824927605620736L}, // SM 8m
 				null, // SM 16m
-				null, // HM 8m //placeholder
+				new long[]{4847325860069376L}, // HM 8m
 				null); // HM 16m
 
 		npcs.put(4824927605620736L, new Npc(NpcType.boss_raid)); // Propagator Core, ilum_lair, raidEncounter
+		npcs.put(4847325860069376L, new Npc(NpcType.boss_raid)); // Propagator Core, ilum_lair, raidEncounter
 		npcs.put(4845470434197504L, new Npc(NpcType.boss_1)); // Imperfect Construct, ilum_lair, raidEncounter
 		npcs.put(4829566170300416L, new Npc(NpcType.boss_1)); // Prey Seeker Droid, ilum_lair, raidEncounter
+		npcs.put(4830356444282880L, new Npc(NpcType.boss_1)); // Powerful Construct, ilum_lair, raidEncounter
+		npcs.put(4831786668392448L, new Npc(NpcType.boss_1)); // Mistaken Construct, ilum_lair, raidEncounter
+		npcs.put(4831722243883008L, new Npc(NpcType.boss_1)); // Rampaging Construct, ilum_lair, raidEncounter
+		npcs.put(4831241207545856L, new Npc(NpcType.boss_1)); // Defender Construct, ilum_lair, raidEncounter
+		npcs.put(4831533265321984L, new Npc(NpcType.boss_1)); // Supplicant Construct, ilum_lair, raidEncounter
 
 		npcs.put(4199438633402368L, new Npc(NpcType.boss_1)); // Caustic Drone, ossus_lair, raidEncounter
 		npcs.put(4198317646938112L, new Npc(NpcType.boss_1)); // Geonosian Berserker, ossus_lair, raidEncounter
