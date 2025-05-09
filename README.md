@@ -33,6 +33,20 @@ Ensure you have the following installed on your system:
     ```
     There is also a .desktop file that you can edit and copy to ~/.local/share/applications
 
+#### Nix
+
+Try out StarParse by running `nix run github:Sinrai/StarParse`.
+
+Then, to install it, add `github:Sinrai/StarParse` to your inputs and the program to your system:
+
+```nix
+inputs.StarParse.url = "github:Sinrai/StarParse";
+```
+
+```nix
+environment.systemPackages = [ inputs.StarParse.packages.${pkgs.system}.StarParse ];
+```
+
 ## Usage
 
 After building and running the application as described above, Starparse will start and you can begin parsing your SWTOR combat logs. Refer to the original [Starparse documentation](http://ixparse.com/) for detailed usage instructions.
