@@ -11,7 +11,7 @@
     </appender>
 
     <appender name="logfile" class="org.apache.log4j.RollingFileAppender">
-        <param name="file" value="starparse.log" />
+        <param name="file" value="${user.home}/.local/state/StarParse/starparse.log" />
         <param name="MaxFileSize" value="10MB" />
         <param name="MaxBackupIndex" value="1" />
         <param name="append" value="true" />
