@@ -11,3 +11,6 @@
 .idea/
 *.log
 result
+.settings
+.project
+.classpath
